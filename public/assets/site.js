@@ -20,8 +20,4 @@
  window.location.href=uri;
  });}
  const up=document.querySelector('.scroll-top');if(up){let t=false;window.addEventListener('scroll',()=>{if(!t){t=true;requestAnimationFrame(()=>{up.classList.toggle('show',scrollY>450);t=false})}},{passive:true});up.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}))}
- // IMPORTANT: Kenyan Advocates (Marketing and Advertising) Rules 2014, rule 5(2)(b).
- // Advocate photos are intentionally unpublished by default. DO NOT enable without legal review.
- const SHOW_ADVOCATE_PORTRAITS=false;
- if(SHOW_ADVOCATE_PORTRAITS)document.querySelectorAll('.advocate-profile').forEach(p=>p.classList.add('show-portrait'));
 })();
